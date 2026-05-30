@@ -30,11 +30,19 @@ public class Main {
 
             switch (opcao) {
                 case 1:
-                    System.out.println("\nTipo de análise:");
-                    System.out.println("1 - Análise Física");
-                    System.out.println("2 - Análise Psicológica");
+                    int tipoAnalise;
+                    do {
+                        System.out.println("\nTipo de análise:");
+                        System.out.println("1 - Análise Física");
+                        System.out.println("2 - Análise Psicológica");
+                        
+                        tipoAnalise = lerInteiro(scanner, "Escolha o tipo de análise (número inteiro): ");
+                        
+                        if (tipoAnalise != 1 && tipoAnalise != 2) {
+                            System.out.println("\nERRO: Escolha uma opção de análise válida (1 ou 2).");
+                        }
+                    } while (tipoAnalise != 1 && tipoAnalise != 2);
 
-                    int tipoAnalise = lerInteiro(scanner, "Escolha o tipo de análise (número inteiro): ");
                     String nome = lerTexto(scanner, "Nome da missão (texto): ");
                     String area = lerTexto(scanner, "Área de impacto (texto): ");
                     String objetivo = lerTexto(scanner, "Objetivo da missão (texto): ");
@@ -116,6 +124,7 @@ public class Main {
                     System.out.println("\nBuscar por:");
                     System.out.println("1 - Nome");
                     System.out.println("2 - Área de impacto");
+                    System.out.println("3 - Número do ODS");
 
                     int tipoBusca = lerInteiro(scanner, "Escolha a busca (número inteiro): ");
                     boolean encontrou = false;
@@ -124,7 +133,12 @@ public class Main {
                         String nomeBusca = lerTexto(scanner, "Digite o nome da missão (texto): ");
                         for (Missao missao : listaMissoes) {
                             if (missao.getNomeMissao().equalsIgnoreCase(nomeBusca)) {
+                                // Exibe o título uma única vez quando encontra o primeiro resultado
+                                if (!encontrou) {
+                                    System.out.println("\n===== RESULTADOS DA BUSCA =====");
+                                }
                                 System.out.println(missao);
+                                System.out.println("------------------------------");
                                 encontrou = true;
                             }
                         }
@@ -132,14 +146,33 @@ public class Main {
                         String areaBusca = lerTexto(scanner, "Digite a área de impacto (texto): ");
                         for (Missao missao : listaMissoes) {
                             if (missao.getAreaImpacto().equalsIgnoreCase(areaBusca)) {
+                                if (!encontrou) {
+                                    System.out.println("\n===== RESULTADOS DA BUSCA =====");
+                                }
                                 System.out.println(missao);
+                                System.out.println("------------------------------");
                                 encontrou = true;
                             }
                         }
+                    } else if (tipoBusca == 3) {
+                        int odsBusca = lerInteiro(scanner, "Digite o número do ODS que deseja buscar: ");
+                        for (Missao missao : listaMissoes) {
+                            if (missao.getOdsRelacionada() == odsBusca) {
+                                if (!encontrou) {
+                                    System.out.println("\n===== RESULTADOS DA BUSCA =====");
+                                }
+                                System.out.println(missao);
+                                System.out.println("------------------------------");
+                                encontrou = true;
+                            }
+                        }
+                    } else {
+                        System.out.println("\nOpção de busca inválida.");
+                        break;
                     }
 
                     if (!encontrou) {
-                        System.out.println("\nMissão não encontrada.");
+                        System.out.println("\nNenhuma missão encontrada para o critério digitado.");
                     }
                     break;
 
