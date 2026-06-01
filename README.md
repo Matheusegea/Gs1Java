@@ -1,20 +1,52 @@
-# 🚀 NeuroSpace - Sistema de Análise Biomédica para Missões Espaciais
+# 🚀 NeuroSpace — Sistema de Análise Biomédica para Missões Espaciais
 
-## 📋 Descrição
+Sistema desenvolvido em **Java** para gerenciamento e monitoramento biomédico de astronautas em missões espaciais, com foco na **saúde física e psicológica antes, durante e após viagens espaciais**.
 
-O **NeuroSpace** é um sistema desenvolvido em **Java** para gerenciamento e monitoramento de missões espaciais, com foco na análise da saúde **física** e **psicológica** de astronautas antes, durante e após viagens espaciais.
+---
 
-O sistema permite cadastrar missões, monitorar indicadores biomédicos, acompanhar alterações biológicas causadas pela permanência no espaço e gerar análises comparativas entre os dados coletados na Terra e os registrados em órbita.
+## 👨‍💻 Integrantes
 
-Além disso, o projeto relaciona as missões aos **Objetivos de Desenvolvimento Sustentável (ODS)**, promovendo aplicações voltadas para inovação, saúde e desenvolvimento científico.
+| RM         | Nome                            |
+| ---------- | ------------------------------- |
+| **563490** | Matheus Tozarelli Egea          |
+| **565573** | Luara Martins de Oliveira Ramos |
+| **563643** | Rafael Lorenzini Xavier         |
+| **563082** | Felipe Ferrari Sumida           |
+
+---
+
+## 🎥 Vídeo do Projeto
+
+📺 Assista à demonstração do sistema:
+
+**Vídeo:** https://www.youtube.com/watch?v=U26wUABxdiQ
+
+---
+
+## 📋 Descrição do Projeto
+
+O **NeuroSpace** é um sistema desenvolvido para gerenciamento e monitoramento de missões espaciais com foco na análise biomédica de astronautas.
+
+O sistema permite:
+
+✅ Cadastrar missões espaciais
+✅ Monitorar indicadores físicos e psicológicos
+✅ Comparar dados biomédicos entre Terra e órbita
+✅ Calcular índices de risco biomédico
+✅ Relacionar missões aos Objetivos de Desenvolvimento Sustentável (ODS)
+
+Além disso, o projeto conecta inovação tecnológica e saúde espacial, promovendo aplicações ligadas à ciência, bem-estar e desenvolvimento sustentável.
 
 ---
 
 ## 🚨 Problema Escolhido
 
-Missões espaciais de longa duração podem gerar impactos severos na saúde dos astronautas devido à microgravidade, isolamento e permanência prolongada em ambientes extremos.
+Missões espaciais de longa duração podem gerar impactos severos na saúde dos astronautas devido à:
 
-Entre os principais problemas monitorados pelo sistema estão:
+* Microgravidade;
+* Isolamento prolongado;
+* Permanência em ambientes extremos;
+* Alterações biológicas decorrentes da viagem espacial.
 
 ### 🧬 Impactos Físicos
 
@@ -30,19 +62,19 @@ Entre os principais problemas monitorados pelo sistema estão:
 * Alterações comportamentais;
 * Redução da estabilidade mental.
 
-O **NeuroSpace** busca auxiliar no acompanhamento dessas mudanças, permitindo registrar dados biomédicos e calcular índices de risco para cada missão.
+O **NeuroSpace** auxilia no acompanhamento dessas mudanças por meio de registros biomédicos e cálculo de índices de risco.
 
 ---
 
-## 🌍 ODS Relacionada
+## 🌍 ODS Relacionadas
 
-O projeto possui foco principal na:
+### 🎯 ODS Principal
 
-### 🎯 ODS 3 — Saúde e Bem-Estar
+**ODS 3 — Saúde e Bem-Estar**
 
-O sistema contribui para estudos relacionados à preservação da saúde física e mental de astronautas, promovendo monitoramento preventivo, análise biomédica e acompanhamento pós-missão.
+O sistema contribui para estudos voltados à preservação da saúde física e mental dos astronautas, promovendo monitoramento preventivo, análise biomédica e acompanhamento pós-missão.
 
-Além disso, o sistema permite vinculação com outras ODS disponíveis:
+### 🔗 ODS vinculadas ao projeto
 
 * ODS 1 — Erradicação da pobreza;
 * ODS 2 — Fome zero e agricultura sustentável;
@@ -59,7 +91,7 @@ Além disso, o sistema permite vinculação com outras ODS disponíveis:
 * Realizar análises físicas e psicológicas dos astronautas;
 * Calcular índices de risco biomédico;
 * Monitorar alterações biológicas pós-viagem;
-* Relacionar missões aos Objetivos de Desenvolvimento Sustentável (ODS);
+* Relacionar missões às ODS;
 * Permitir busca, listagem e atualização de missões;
 * Gerar relatórios analíticos comparativos entre Terra e espaço.
 
@@ -67,7 +99,7 @@ Além disso, o sistema permite vinculação com outras ODS disponíveis:
 
 ## ⚙️ Funcionalidades
 
-### 1. Cadastro de Missões
+### 1️⃣ Cadastro de Missões
 
 Permite registrar:
 
@@ -79,9 +111,7 @@ Permite registrar:
 * Prioridade da missão;
 * Status operacional.
 
----
-
-### 2. Análise Física 🧬
+### 2️⃣ Análise Física 🧬
 
 Monitoramento de:
 
@@ -90,9 +120,7 @@ Monitoramento de:
 * Massa muscular;
 * Alterações pós-viagem em órbita.
 
----
-
-### 3. Análise Psicológica 🧠
+### 3️⃣ Análise Psicológica 🧠
 
 Monitoramento de:
 
@@ -101,9 +129,7 @@ Monitoramento de:
 * Foco comportamental;
 * Alterações psicológicas pós-viagem.
 
----
-
-### 4. Busca de Missões 🔎
+### 4️⃣ Busca de Missões 🔎
 
 Busca por:
 
@@ -111,9 +137,7 @@ Busca por:
 * Área de impacto;
 * Número da ODS.
 
----
-
-### 5. Atualização de Status 📈
+### 5️⃣ Atualização de Status 📈
 
 Permite alterar o status entre:
 
@@ -124,9 +148,7 @@ Permite alterar o status entre:
 
 Com atualização automática das informações biomédicas quando necessário.
 
----
-
-### 6. Relatório Analítico Pós-Viagem 📊
+### 6️⃣ Relatório Analítico Pós-Viagem 📊
 
 Exibe:
 
@@ -135,9 +157,7 @@ Exibe:
 * Variação percentual da saúde;
 * Índice de risco calculado.
 
----
-
-### 7. Resumo Final do Sistema 📌
+### 7️⃣ Resumo Final do Sistema 📌
 
 Mostra:
 
@@ -149,11 +169,9 @@ Mostra:
 
 ## 🧠 Conceitos de Programação Aplicados
 
-O projeto utiliza conceitos importantes da Programação Orientada a Objetos (POO):
-
 ### 🔹 Herança
 
-A classe abstrata `Missao` é utilizada como base para:
+A classe abstrata **Missao** é utilizada como base para:
 
 * `AnaliseFisica`
 * `AnalisePsicologica`
@@ -166,7 +184,7 @@ Uso do método:
 calcularRisco()
 ```
 
-sobrescrito em cada tipo de análise.
+Sobrescrito em cada tipo de análise.
 
 ### 🔹 Encapsulamento
 
@@ -184,7 +202,7 @@ A classe:
 Missao
 ```
 
-centraliza regras comuns do sistema.
+Centraliza regras comuns do sistema.
 
 ### 🔹 Tratamento de Exceções
 
@@ -194,7 +212,7 @@ Validação de entrada utilizando:
 try/catch
 ```
 
-para evitar falhas por entradas inválidas.
+Para evitar falhas por entradas inválidas.
 
 ---
 
@@ -214,17 +232,6 @@ br.com.neurospace
 
 ---
 
-## 👨‍💻 Integrantes
-
-| RM     | Nome                            |
-| ------ | ------------------------------- |
-| 563490 | Matheus Tozarelli Egea          |
-| 565573 | Luara Martins de Oliveira Ramos |
-| 563643 | Rafael Lorenzini Xavier         |
-| 563082 | Felipe Ferrari Sumida           |
-
----
-
 ## ▶️ Como Executar
 
 ### Pré-requisitos
@@ -237,10 +244,8 @@ br.com.neurospace
 ### Execução
 
 1. Clone ou baixe o projeto;
-
 2. Abra a pasta na IDE;
-
-3. Execute o arquivo:
+3. Execute:
 
 ```txt
 Main.java
@@ -264,16 +269,6 @@ Main.java
 
 ---
 
-## 🎥 Link do Vídeo / Caminho
-
-Adicionar aqui o link do vídeo do projeto:
-
-```txt
-[Cole aqui o link do vídeo](https://www.youtube.com/watch?v=U26wUABxdiQ)
-```
-
----
-
 ## 🛠️ Tecnologias Utilizadas
 
 * Java
@@ -284,12 +279,12 @@ Adicionar aqui o link do vídeo do projeto:
 * Classes Abstratas
 * Tratamento de Exceções
 * Estruturas de Controle
-* Coleções (`ArrayList`)
+* ArrayList
 
 ---
 
 ## 🚀 Conclusão
 
-O **NeuroSpace** demonstra a aplicação prática de conceitos de **Programação Orientada a Objetos**, modelagem de sistemas e análise biomédica em um cenário de missões espaciais.
+O **NeuroSpace** demonstra a aplicação prática de conceitos de **Programação Orientada a Objetos (POO)**, modelagem de sistemas e análise biomédica aplicada ao contexto espacial.
 
 O sistema combina gerenciamento operacional, monitoramento de saúde e análise comparativa pós-missão, oferecendo uma solução organizada para acompanhamento físico e psicológico de astronautas em ambientes extremos.
