@@ -219,7 +219,7 @@ Para evitar falhas por entradas inválidas.
 ## 📂 Estrutura do Projeto
 
 ```txt
-br.com.neurospace
+br.com.neurospace.cadastro
 │
 ├── model
 │   ├── Missao.java
